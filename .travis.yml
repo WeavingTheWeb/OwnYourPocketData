@@ -1,0 +1,10 @@
+language: php
+
+php:
+  - 5.5
+  - 5.4
+  - hhvm
+
+before_script:
+  - composer install --no-progress --prefer-dist --dev
+  - cp Tests/Resources/config/config.yml Resources/config/config.yml
