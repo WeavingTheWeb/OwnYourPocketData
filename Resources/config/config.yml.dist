@@ -1,0 +1,6 @@
+pocket:
+    consumer_key: ~
+    access_token: ~
+
+authorization:
+    secret:       change_me
