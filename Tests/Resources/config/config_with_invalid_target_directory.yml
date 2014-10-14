@@ -7,4 +7,4 @@ authorization:
     secret:           N7Q8^zwktyt!ytMDGS#pxs8TUF^9yR
 
 items_retrieval:
-    target_directory: Tests/Resources/documents
+    target_directory: Tests/Resources/document

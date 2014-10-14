@@ -14,6 +14,8 @@
         "php": ">=5.4.0",
         "symfony/console": "2.5.5",
         "symfony/yaml": "@stable",
+        "symfony/config": "@stable",
+        "symfony/translation": "@stable",
         "silex/silex": "1.2",
         "guzzlehttp/guzzle": "~4.0",
         "igorw/config-service-provider": "1.2.*"
@@ -23,7 +25,8 @@
         "phpspec/prophecy": "~1.2",
         "symfony/browser-kit": ">=2.3,<2.4-dev",
         "symfony/css-selector": ">=2.3,<2.4-dev",
-        "symfony/translation": "@stable"
+        "symfony/filesystem": "@stable",
+        "symfony/finder": "@stable"
     },
     "config": {
         "bin-dir": "bin"

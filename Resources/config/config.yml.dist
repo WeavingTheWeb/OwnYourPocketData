@@ -5,3 +5,6 @@ pocket:
 
 authorization:
     secret:       change_me
+
+items_retrieval:
+    target_directory: Resources/documents
