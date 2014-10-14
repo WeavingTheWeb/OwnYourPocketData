@@ -1,6 +1,7 @@
 pocket:
     consumer_key: testing-consumer-key
     access_token: ~
+    endpoint:     https://getpocket.com/v3
 
 authorization:
     secret:       N7Q8^zwktyt!ytMDGS#pxs8TUF^9yR

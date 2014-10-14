@@ -1,0 +1,1 @@
+items_retrieved: 'one: 1 item has been retrieved|some: {{ count }} items have been retrieved'
