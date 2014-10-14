@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0e3baa6c202fdf2e435ec8211695f686",
+    "hash": "06c2c5c8774d7ef066d4210adc51723c",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -1774,6 +1774,62 @@
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
             "time": "2014-10-01 05:53:11"
+        },
+        {
+            "name": "symfony/translation",
+            "version": "v2.5.5",
+            "target-dir": "Symfony/Component/Translation",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Translation.git",
+                "reference": "170c0d895616e1a6a35681ffb0b9e339f58ab928"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/170c0d895616e1a6a35681ffb0b9e339f58ab928",
+                "reference": "170c0d895616e1a6a35681ffb0b9e339f58ab928",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/config": "~2.0",
+                "symfony/intl": "~2.3",
+                "symfony/yaml": "~2.2"
+            },
+            "suggest": {
+                "symfony/config": "",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Translation\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Translation Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-09-23 05:25:11"
         }
     ],
     "aliases": [
@@ -1781,7 +1837,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "symfony/yaml": 0
+        "symfony/yaml": 0,
+        "symfony/translation": 0
     },
     "prefer-stable": false,
     "platform": {
