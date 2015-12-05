@@ -5,18 +5,20 @@ namespace WeavingTheWeb\OwnYourData\Exception;
 /**
  * @author  Thierry Marianne <thierry.marianne@weaving-the-web.org>
  */
-class InstallationException extends \RuntimeException
+class ConfigurationException extends \RuntimeException
 {
     const CONFIGURATION_NOT_FOUND = 10;
 
     const CONSUMER_KEY_MISSING = 20;
+
+    const TARGET_DIRECTORY_INVALID = 30;
 
     public static function throwNotFoundConfigurationException($configurationFile)
     {
         $errorCode = self::CONFIGURATION_NOT_FOUND;
         $message = sprintf('the configuration file cannot be found where it is assumed to be ("%s")', $configurationFile);
 
-        self::throwInstallationException($message, $errorCode);
+        self::throwConfigurationException($message, $errorCode);
     }
 
     public static function throwMissingConsumerKey($configurationFile)
@@ -24,7 +26,15 @@ class InstallationException extends \RuntimeException
         $errorCode = self::CONSUMER_KEY_MISSING;
         $message = sprintf('the consumer key of your Pocket application is missing in "%s"', $configurationFile);
 
-        self::throwInstallationException($message, $errorCode);
+        self::throwConfigurationException($message, $errorCode);
+    }
+
+    public static function throwInvalidTargetDirectory($targetDirectory, $configurationFile)
+    {
+        $errorCode = self::TARGET_DIRECTORY_INVALID;
+        $message = sprintf('the target directory ("%s") is invalid in "%s"', $targetDirectory, $configurationFile);
+
+        self::throwConfigurationException($message, $errorCode);
     }
 
     /**
@@ -64,7 +74,7 @@ class InstallationException extends \RuntimeException
      * @param $message
      * @param $errorCode
      */
-    protected static function throwInstallationException($message, $errorCode)
+    protected static function throwConfigurationException($message, $errorCode)
     {
         throw new self(self::decorateExceptionMessage($message, $errorCode), $errorCode);
     }

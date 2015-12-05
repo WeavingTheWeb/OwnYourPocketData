@@ -31,6 +31,8 @@ class OauthControllerProviderTest extends WebTestCase
     public function tearDown()
     {
         $this->prophet->checkPredictions();
+
+        parent::tearDown();
     }
 
     public function createApplication()

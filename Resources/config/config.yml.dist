@@ -1,6 +1,10 @@
 pocket:
     consumer_key: ~
     access_token: ~
+    endpoint:     https://getpocket.com/v3
 
 authorization:
     secret:       change_me
+
+items_retrieval:
+    target_directory: Resources/documents

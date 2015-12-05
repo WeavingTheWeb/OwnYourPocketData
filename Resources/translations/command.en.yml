@@ -1,0 +1,2 @@
+dialog.ask.items_retrieval_limit: How many items would you like to retrieve at most?
+items_retrieved:                  'one: 1 item has been retrieved.|some: {{ count }} items have been retrieved.'
